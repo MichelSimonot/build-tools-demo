@@ -1,0 +1,40 @@
+root: true
+extends:
+    # Recommended rules can be found at http://eslint.org/docs/rules/
+    - eslint:recommended
+parserOptions:
+    sourceType: module
+env:
+    browser: true
+    node: true
+rules:
+    # Have semi-colons at the end of lines.
+    semi:
+        - 2
+        - always
+    # All quotes are single quotes.
+    quotes:
+        - 2
+        - single
+    # Indentation is 4 spaces.
+    indent:
+        - error
+        - 4
+        # Indent switch-cases by one level.
+        - { SwitchCase: 1 }
+    # Don't have unused variables defined.
+    no-unused-vars:
+        - 2
+    # Always include curly-braces.
+    curly:
+        - 2
+        - all
+    # Always use === operators (over ==).
+    eqeqeq:
+        - 2
+    # Don't use undefined variables.
+    no-undef:
+        - 2
+    # Don't include unnecessary white-space.
+    no-trailing-spaces:
+        - 2

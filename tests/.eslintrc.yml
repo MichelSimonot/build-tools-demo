@@ -1,0 +1,14 @@
+# Additional ESLint configs for test files.
+# Extends the root file's rules.
+
+env:
+    mocha: true
+globals:
+    sinon: false
+    expect: false
+    module: false
+rules:
+    no-unused-vars:
+        - 0
+    no-undef:
+        - 0
