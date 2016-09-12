@@ -11,8 +11,9 @@ module.exports = function(karmaConfig) {
         reporters: ['mocha'],
         // Load the files needed for testing.
         files: [].concat(
-            './*.spec.js',
-            '../src/**.js'
+            './index.js',
+            '../src/**.js',
+            './*.spec.js'
         )
     });
 };

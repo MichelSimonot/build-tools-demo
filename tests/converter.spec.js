@@ -1,5 +1,3 @@
-var module = sinon.mock();
-
 /**
  * Test cases for converter.js
  */

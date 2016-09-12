@@ -38,3 +38,6 @@ rules:
     # Don't include unnecessary white-space.
     no-trailing-spaces:
         - 2
+    # Allow console statements.
+    no-console:
+        - 0

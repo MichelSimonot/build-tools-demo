@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var calculate = require('./src/calculator');
+var calculate = require('./src/calculator').calculate;
 //Run task; for easier testing for now.
 gulp.task('run', function(done) {
     var equation = '2+3';
