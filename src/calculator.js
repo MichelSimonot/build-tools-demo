@@ -20,6 +20,7 @@ function calculate(input) {
 
     var solution = solve(arrayEquation);
     console.log('Solution:', solution);
+    return solution;
 }
 
 /**

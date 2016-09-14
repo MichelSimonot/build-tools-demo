@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Step Calculator</title>
+    </head>
+
+    <body>
+
+        <fieldset>
+            <legend>Solve by Step</legend>
+            Equation: <input type="text" id="equation"/>
+            <input type="button" value="Solve" id="button" onclick="solveIt();"/>
+
+            <fieldset>
+                <legend>Solution</legend>
+                <div id="solution"></div>
+            </fieldset>
+        </fieldset>
+
+        <script src="build/bundle.js"></script>
+        <script type="text/javascript">
+            function solveIt() {
+                var equation = document.getElementById('equation').value;
+                var result = calculator.calculate(equation);
+                document.getElementById('solution').innerHTML = result;
+            }
+        </script>
+
+    </body>
+
+
+</html>
