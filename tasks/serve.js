@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync');
 
-gulp.task('serve', function() {
+gulp.task('serve', ['build'], function() {
     var bsConfig = {
         ghostMode: false,
         https: true,
