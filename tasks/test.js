@@ -9,12 +9,12 @@ var path = require('path');
  * Uses Mocha (https://mochajs.org/) and Sinon-Chai (https://github.com/domenic/sinon-chai)
  * as test frameworks.
  */
-gulp.task('test', function() {
+gulp.task('test', function(done) {
     new karma.Server({
         // Karma always requires the file be relative to the directory this file is in.
         configFile: path.join(__dirname, '../tests/karma.conf.js'),
         singleRun: true
     }, function() {
-
+        done();
     }).start();
 });
